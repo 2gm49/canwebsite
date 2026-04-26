@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us — Croydon Alliance Network</title>
+  <meta name="description" content="Apply to bring your ER:LC server into the Croydon Alliance Network." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div class="page-top">
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-label">Applications</div>
+      <h1>Join CAN</h1>
+      <p>Think your server has what it takes? Fill in the form below and we'll review your application.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="form-wrap">
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;">
+          <div style="background:#fff;border-radius:10px;padding:1.25rem;text-align:center;border:1px solid #e9ecef;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+            <div style="font-size:1.5rem;margin-bottom:.5rem;">📋</div>
+            <div style="font-size:.78rem;font-weight:700;color:#1a1a2e;margin-bottom:.2rem;">Apply</div>
+            <div style="font-size:.72rem;color:#6c757d;">Fill in the form</div>
+          </div>
+          <div style="background:#fff;border-radius:10px;padding:1.25rem;text-align:center;border:1px solid #e9ecef;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+            <div style="font-size:1.5rem;margin-bottom:.5rem;">🔍</div>
+            <div style="font-size:.78rem;font-weight:700;color:#1a1a2e;margin-bottom:.2rem;">Review</div>
+            <div style="font-size:.72rem;color:#6c757d;">We assess your server</div>
+          </div>
+          <div style="background:#fff;border-radius:10px;padding:1.25rem;text-align:center;border:1px solid #e9ecef;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+            <div style="font-size:1.5rem;margin-bottom:.5rem;">🤝</div>
+            <div style="font-size:.78rem;font-weight:700;color:#1a1a2e;margin-bottom:.2rem;">Welcome</div>
+            <div style="font-size:.72rem;color:#6c757d;">Join the network</div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form id="can-form" novalidate>
+
+            <!-- Basic Info -->
+            <div class="form-section-title">Server Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="serverName">Server Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="serverName" name="serverName" required placeholder="Your ER:LC server name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="serverOwner">Server Owner <span class="required">*</span></label>
+                <input class="form-input" type="text" id="serverOwner" name="serverOwner" required placeholder="Discord username" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="members">Discord Members <span class="required">*</span></label>
+                <input class="form-input" type="number" id="members" name="members" required placeholder="e.g. 1500" min="0" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="invite">Server Invite <span class="required">*</span></label>
+                <input class="form-input" type="text" id="invite" name="invite" required placeholder="discord.gg/..." />
+              </div>
+            </div>
+
+            <!-- Staff Info -->
+            <div class="form-section-title">Staff &amp; Leadership</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="staffTeam">Staff Team Size <span class="required">*</span></label>
+                <input class="form-input" type="number" id="staffTeam" name="staffTeam" required placeholder="Total staff members" min="0" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="shrTeam">SHR Team Size <span class="required">*</span></label>
+                <input class="form-input" type="number" id="shrTeam" name="shrTeam" required placeholder="Senior high ranks" min="0" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="otherOwnership">Other Server Ownership</label>
+              <span class="form-hint">List any other servers you own: dcuser:dcid dcuser:dcid</span>
+              <input class="form-input" type="text" id="otherOwnership" name="otherOwnership" placeholder="username:000000000000000000 username:000000000000000000" />
+            </div>
+
+            <!-- Application Questions -->
+            <div class="form-section-title">Application Questions</div>
+
+            <div class="form-group">
+              <label class="form-label" for="whyJoin">Why do you want to join CAN? <span class="required">*</span></label>
+              <textarea class="form-textarea" id="whyJoin" name="whyJoin" required placeholder="Tell us why you're applying and what CAN would mean for your server…"></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="serverAge">How long has your server been released? <span class="required">*</span></label>
+                <input class="form-input" type="text" id="serverAge" name="serverAge" required placeholder="e.g. 6 months" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="getsFull">Does your server get full often? <span class="required">*</span></label>
+                <select class="form-select" id="getsFull" name="getsFull" required>
+                  <option value="">Select an option</option>
+                  <option>Yes, regularly</option>
+                  <option>Sometimes</option>
+                  <option>Rarely</option>
+                  <option>Not yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="playerbaseConsistency">Playerbase Consistency <span class="required">*</span></label>
+              <span class="form-hint">Describe how consistent your playerbase is — peak times, average online, typical session length, etc.</span>
+              <textarea class="form-textarea" id="playerbaseConsistency" name="playerbaseConsistency" required placeholder="e.g. We average 15–20 online during UK evenings, peaking at 30+ on weekends…"></textarea>
+            </div>
+
+            <!-- Metrics -->
+            <div class="form-section-title">Server Metrics</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="staffRating">Staff Team Rating (1–10) <span class="required">*</span></label>
+                <span class="form-hint">Be realistic — inflated scores work against you.</span>
+                <select class="form-select" id="staffRating" name="staffRating" required>
+                  <option value="">Select</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option>9</option><option>10</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="growthPotential">Growth Potential (1–10) <span class="required">*</span></label>
+                <span class="form-hint">How much room for growth does your server realistically have?</span>
+                <select class="form-select" id="growthPotential" name="growthPotential" required>
+                  <option value="">Select</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option>9</option><option>10</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="weeklyGrowth">Weekly Discord Member Growth <span class="required">*</span></label>
+              <input class="form-input" type="text" id="weeklyGrowth" name="weeklyGrowth" required placeholder="e.g. +30 per week on average" />
+            </div>
+
+            <!-- Extras -->
+            <div class="form-section-title">Anything Else?</div>
+
+            <div class="form-group">
+              <label class="form-label" for="anythingElse">Additional Information</label>
+              <textarea class="form-textarea" id="anythingElse" name="anythingElse" style="min-height:80px;" placeholder="Anything else you'd like us to know about your server or your application…"></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Submit Application</button>
+            <div id="form-msg" class="form-msg" role="alert"></div>
+
+          </form>
+        </div><!-- /.form-card -->
+
+      </div><!-- /.form-wrap -->
+    </div>
+  </section>
+
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

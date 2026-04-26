@@ -1,0 +1,5 @@
+# Netlify redirect rules — these are already handled by the folder/index.html structure
+# but this file ensures the Netlify Functions API path is routed correctly
+
+/.netlify/functions/*  /.netlify/functions/:splat  200
+/api/*  /.netlify/functions/:splat  200

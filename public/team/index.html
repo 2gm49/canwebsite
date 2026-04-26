@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Team — Croydon Alliance Network</title>
+  <meta name="description" content="Meet the leadership team behind the Croydon Alliance Network." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    .team-section { padding: 4rem 2rem 5rem; }
+
+    .tree-wrap { display: flex; flex-direction: column; align-items: center; }
+
+    /* Vertical connector between levels */
+    .tree-v { width: 2px; height: 28px; background: #dee2e6; }
+
+    /* Horizontal bar for multiple nodes on same level */
+    .tree-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      position: relative;
+    }
+
+    /* the horizontal line spanning across multi-node levels */
+    .tree-row.multi::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(75px);
+      right: calc(75px);
+      height: 2px;
+      background: #dee2e6;
+    }
+
+    .tree-node { display: flex; flex-direction: column; align-items: center; }
+    .tree-node-top { width: 2px; height: 28px; background: #dee2e6; }
+
+    /* bottom connector from node going down */
+    .tree-node-bot { width: 2px; height: 28px; background: #dee2e6; }
+
+    /* Additional staff level - flex-wrap grid */
+    .staff-level {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+
+    .staff-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,.12);
+      border: 1px solid #e9ecef;
+      border-top: 3px solid #ced4da;
+      text-align: center;
+      min-width: 130px;
+      transition: all .2s;
+    }
+
+    .staff-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.18); transform: translateY(-2px); }
+
+    .staff-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #fff;
+      margin: 0 auto .6rem;
+    }
+
+    .staff-role {
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #6c757d;
+      margin-bottom: .15rem;
+    }
+
+    .staff-name { font-weight: 700; font-size: .82rem; color: #1a1a2e; }
+
+    @media (max-width: 640px) {
+      .tree-row { gap: 1rem; }
+      .tree-row.multi::before { left: 65px; right: 65px; }
+      .tree-card { min-width: 120px; padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-top">
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-label">Leadership</div>
+      <h1>The Team</h1>
+      <p>The people who run the Croydon Alliance Network and keep standards high.</p>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+
+      <div class="tree-wrap">
+
+        <!-- Level 1: Chairmen -->
+        <div class="tree-row multi" style="--nodes:2;">
+          <div class="tree-node">
+            <div class="tree-card chairman">
+              <div class="tree-avatar" style="background:linear-gradient(135deg,#c8102e 0%,#9e0d24 100%);">👑</div>
+              <div class="tree-role">Chairman</div>
+              <div class="tree-name">Vacant</div>
+            </div>
+          </div>
+          <div class="tree-node">
+            <div class="tree-card chairman">
+              <div class="tree-avatar" style="background:linear-gradient(135deg,#c8102e 0%,#9e0d24 100%);">👑</div>
+              <div class="tree-role">Chairman</div>
+              <div class="tree-name">Vacant</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tree-v"></div>
+
+        <!-- Level 2: Vice Chairmen -->
+        <div class="tree-row multi">
+          <div class="tree-node">
+            <div class="tree-card vice">
+              <div class="tree-avatar" style="background:linear-gradient(135deg,#0a3fa3 0%,#003087 100%);">⭐</div>
+              <div class="tree-role">Vice Chairman</div>
+              <div class="tree-name">Vacant</div>
+            </div>
+          </div>
+          <div class="tree-node">
+            <div class="tree-card vice">
+              <div class="tree-avatar" style="background:linear-gradient(135deg,#0a3fa3 0%,#003087 100%);">⭐</div>
+              <div class="tree-role">Vice Chairman</div>
+              <div class="tree-name">Vacant</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tree-v"></div>
+
+        <!-- Level 3: Server Manager -->
+        <div class="tree-row">
+          <div class="tree-node">
+            <div class="tree-card manager">
+              <div class="tree-avatar" style="background:linear-gradient(135deg,#495057 0%,#343a40 100%);">🛡️</div>
+              <div class="tree-role">Server Manager</div>
+              <div class="tree-name">Vacant</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tree-v"></div>
+
+        <!-- Level 4+: Additional Roles -->
+        <div style="text-align:center;margin-bottom:1rem;">
+          <span style="font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#6c757d;">Network Staff</span>
+        </div>
+        <div class="staff-level">
+          <div class="staff-card">
+            <div class="staff-avatar">📋</div>
+            <div class="staff-role">HR Manager</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">📢</div>
+            <div class="staff-role">Media Lead</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">🔧</div>
+            <div class="staff-role">Tech Lead</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">🤝</div>
+            <div class="staff-role">Partnerships</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">⚖️</div>
+            <div class="staff-role">Moderation</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">📊</div>
+            <div class="staff-role">Applications</div>
+            <div class="staff-name">Vacant</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="max-width:580px;margin:3rem auto 0;text-align:center;background:#f8f9fa;border-radius:12px;padding:1.75rem;border:1px solid #e9ecef;">
+        <p style="font-size:.85rem;color:#6c757d;line-height:1.7;">Interested in joining the CAN team? Keep an eye on our Discord announcements for staff openings. All roles within the network require a strong commitment to our standards and values.</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
